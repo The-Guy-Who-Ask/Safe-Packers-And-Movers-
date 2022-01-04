@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-transform: capitalize;
+    color: white;
+}
+
+body {
+    background: rgba(0, 0, 0);
+    overflow-x: hidden;
+}
+
+header .heading {
+    height: 25vh;
+    width: 100vw;
+    background: linear-gradient(rgb(0, 7, 133), rgb(0, 0, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info p {
+    text-align: justify;
+    margin: 2em 0 2em 5px;
+}
+
+header .heading h1 {
+    text-align: center;
+    width: fit-content;
+}
+
+header .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 0.5em;
+    background: radial-gradient(rgb(66, 66, 255), rgb(0, 0, 0));
+    border-left: 1px solid rgb(3, 3, 110);
+    box-shadow: 0px 0px 1em 2px rgb(0, 0, 0);
+    align-items: center;
+    padding: 5px;
+    transition: all 0.5s;
+    border-radius: 2em 0 0 2em;
+}
+
+.nav nav {
+    transition: all 0.5s;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em 0;
+    height: 100vh;
+    justify-content: space-evenly;
+    font-size: 0;
+}
+
+.nav:hover nav {
+    font-size: 1.5em;
+    transition: all 0.5s;
+}
+
+.nav:hover {
+    width: 7em;
+    transition: all 0.5s;
+}
+
+.inquirybox .imgBg {
+    background: url(../img/images.jpg);
+    background-repeat: no-repeat;
+    height: 10em;
+    width: 16em;
+    background-size: cover;
+    margin-left: 5px;
+}
+
+.inquirybox {
+    width: fit-content;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid rgb(51, 51, 238);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    padding: 1em;
+}
+
+.inquirybox:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    border-radius: 0.2em;
+}
+
+.inquirybox p {
+    margin: 1em 0;
+}
+
+.inquirybox button {
+    background: rgb(19, 19, 131);
+    padding: 1em;
+    margin: 1em auto;
+    outline: none;
+    border: 1px solid aquamarine;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.5em 0.01em;
+    transition: all 0.5s;
+    width: fit-content;
+}
+
+.inquirybox button:hover {
+    border-radius: 2em;
+    transition: all 0.5s;
+}
+
+.inquirybox button:active {
+    box-shadow: none;
+    transition: all 0.5s;
+}
+
+.wholeInquiry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.wholeInquiry .secondImgBg {
+    background: url(../img/download.jpg);
+    background-repeat: no-repeat;
+    height: 11em;
+    width: 16em;
+    background-size: cover;
+    margin-left: 5px;
+}
+
+.wholeInquiry .thirdSecImgBg {
+    background: url(../img/images.jpg);
+    background-repeat: no-repeat;
+    height: 7em;
+    width: 7em;
+    background-size: cover;
+    margin-left: 5px;
+}
+
+.wholeInquiry .thirdImgBg {
+    background: url(../img/download.jpg);
+    background-repeat: no-repeat;
+    height: 7em;
+    width: 7em;
+    background-size: cover;
+    margin-left: 5px;
+}
+
+.inquirybox .bothImg {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* contacts */
+
+.contacts {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondHeading {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts h2 {
+    width: fit-content;
+    border-bottom: 0.5em solid #474feeb0;
+}
+
+.contacts p {
+    font-size: 1.6em;
+    text-align: left;
+    padding: 2em 0;
+    margin-left: 5px;
+}
+
+#contacts {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 1.3em;
+}
+
+#contacts .box {
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: fit-content;
+    padding: 1.7em;
+    transition: all 1s ease;
+    border: 1px solid lightblue;
+    border-radius: 50%;
+}
+
+#contacts .box:hover {
+    border-radius: 1.5em;
+    box-shadow: 0 0 0.5em 1px;
+    transition: all 1s ease;
+    transform: translate(-5px, -9px);
+}
+
+
+/* about us */
+
+.questions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.questions h2 {
+    width: fit-content;
+    border-bottom: 0.8em solid #474fee6b;
+}
+
+.para {
+    display: flex;
+    align-items: center;
+}
+
+section.center .para p {
+    line-height: 1.5em;
+    text-align: justify;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 460px) {
+    .wholeInquiry .inquirybox {
+        width: 16em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #contacts .box {
+        margin: 0.5em 0;
+    }
+}
